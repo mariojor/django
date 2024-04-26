@@ -30,6 +30,14 @@ Dentro do seu projeto Django, você pode criar apps separadas para diferentes fu
 ```
 python manage.py startapp minhaapp
 ```
+Após criar a aplicação, adicione-a à lista de INSTALLED_APPS no arquivo settings.py do seu projeto para garantir que o Django reconheça a aplicação:
+```
+INSTALLED_APPS = [
+    ...
+    'cadastro',
+]
+```
+
 ### 6. Modelos e Migrações
 Defina modelos em models.py de sua app e realize migrações para criar as tabelas no banco de dados:
 
